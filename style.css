@@ -1,0 +1,156 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700;800;900;1000&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {background:url(img/.element_1)50% no-repeat; background-size: contain}
+
+body {
+  padding: 0px 20px;
+  background-color: #000000;
+    color: aliceblue;
+}
+
+.element img{
+  max-width: 100%;
+}
+
+.container {
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.parent {
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  perspective: 1000px;
+}
+
+.card img{
+  position: absolute;
+    width: 280px;
+    top:20px;
+    padding:65px;
+}
+
+.card {
+  padding-top: 200px;
+  transform-style: preserve-3d;
+  
+  background-position: center center;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+.card:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.content-box {
+  height: 100%;
+  width: 100%;
+  
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: rgba(0, 255, 51, 0.925) 0px 20px 50px -25px;
+  transition: all 0.5s ease-in-out;
+  padding: 50px 25px 25px 25px;
+  transform-style: preserve-3d;
+}
+.content-box .card-title {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+.content-box .card-title:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+.content-box .card-content {
+  padding-top: 15px;
+  font-size: 12px;
+  color: #e514ed;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+.content-box .card-content:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+.content-box .see-more {
+  display: block;
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #16d512;
+  padding-top: 15px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+.content-box .see-more:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+
+
+.date-box span {
+  display: block;
+  text-align: center;
+}
+.date-box .month {
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+.date-box .date {
+  font-size: 20px;
+  font-weight: 900;
+  color: #0088ff;
+}
+
+.card2 {
+  filter: hue-rotate(150deg);
+}
+
+.card3 {
+  filter: hue-rotate(300deg);
+}
+
+.card4 {
+  filter: hue-rotate(90deg);
+}
+
+
+.element_1{
+    position: absolute;
+    width: 300px;
+    top: -70px;
+    left: 0;
+
+}
+
+.element_2{
+    position: absolute;
+    width: 300px;
+    right: 0px;
+    top: -70px;
+}
+
+.cloth img{
+    position: relative;
+    width: 200px;
+    padding: 85px;
+    bottom: -150px;
+    border: 3px solid #37ff37;
+    border-radius: 50px;
+}
